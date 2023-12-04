@@ -1,0 +1,15 @@
+ALGORITHM Produit_De_Points
+VAR
+    set_declaration
+BEGIN
+    FUNCTION dot_product(V1,V2) : INTEGER
+    VAR
+        ps : INTEGER
+    BEGIN
+        set_instructions
+        FOR i FROM 0 TO V1.lenght STEP 1  DO
+            ps = ps + (V1[i] * V2[i]) 
+        END_FOR
+        RETURN ps ;
+    END
+END
